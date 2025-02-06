@@ -1,0 +1,14 @@
+# version: "3.4"
+
+services:
+  finances.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5000 # 🔹 Remove HTTPS e força apenas HTTP
+    ports:
+      - "5050:5000"
+      - "5051:5001"
+
+  finances.consumer:
+    environment:
+      - DOTNET_ENVIRONMENT=Development

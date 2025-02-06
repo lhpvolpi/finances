@@ -1,0 +1,13 @@
+﻿global using System.Net.Mime;
+global using System.Text;
+global using System.Text.Json;
+global using System.Text.Json.Serialization;
+global using FluentValidation;
+global using MediatR;
+global using Microsoft.AspNetCore.Authentication.JwtBearer;
+global using Microsoft.AspNetCore.Diagnostics;
+global using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.Extensions.Diagnostics.HealthChecks;
+global using Microsoft.IdentityModel.Tokens;
+global using Microsoft.OpenApi.Models;

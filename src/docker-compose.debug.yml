@@ -1,0 +1,40 @@
+version: "3.4"
+
+services:
+  # SQL Server 2022 para Linux
+  mssql:
+    container_name: sql-server-2022-linux
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=admin@123
+      - MSSQL_PID=Express
+    ports:
+      - "1433:1433"
+    networks:
+      - finances-network
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+    platform: linux/amd64
+
+  # Redis para Linux
+  redis:
+    container_name: redis-server
+    image: redis:latest
+    restart: always
+    ports:
+      - "6379:6379"
+    networks:
+      - finances-network
+    volumes:
+      - redis-data:/data
+
+networks:
+  finances-network:
+    driver: bridge
+
+volumes:
+  sqlserver-data:
+    driver: local
+  redis-data:
+    driver: local

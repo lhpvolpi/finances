@@ -1,0 +1,1 @@
+﻿namespace Finances.Core.Contexts.TransactionContext.UseCases.Create;
