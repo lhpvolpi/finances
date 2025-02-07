@@ -83,7 +83,8 @@ A aplicação é composta por dois principais serviços:
 
 - `cd src`
 - `docker-compose up -d`
-- Abra no navegador: [http://localhost:5050/swagger/index.html](http://localhost:5050/swagger/index.html)
+- Documentação Swagger: [http://localhost:5050/swagger/index.html](http://localhost:5050/swagger/index.html)
+- Status da infraestrutura (SQL Server e Redis): [http://localhost:5050/health-details](http://localhost:5050/health-details)
 
 ### Comandos para executar em modo debug (apenas Redis e SQL Server)
 
