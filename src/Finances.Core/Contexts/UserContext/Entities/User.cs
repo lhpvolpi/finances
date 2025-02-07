@@ -5,6 +5,8 @@ namespace Finances.Core.Contexts.UserContext.Entities;
 [Table("users")]
 public class User : Entity
 {
+    public User() { }
+
     public User(string email, string passwordHash)
     {
         this.Email = email;

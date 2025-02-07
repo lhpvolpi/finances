@@ -8,25 +8,4 @@
 		<PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
 		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
 	</ItemGroup>
-	<ItemGroup>
-	  <None Remove="Contexts\ConsolidationContext\" />
-	  <None Remove="Contexts\ConsolidationContext\Entities\" />
-	  <None Remove="Contexts\ConsolidationContext\Data\" />
-	  <None Remove="Contexts\ConsolidationContext\Services\" />
-	  <None Remove="Contexts\ConsolidationContext\UseCases\" />
-	  <None Remove="Contexts\ConsolidationContext\UseCases\Get\" />
-	  <None Remove="Contexts\UserContext\UseCases\Login\" />
-	  <None Remove="Contexts\UserContext\UseCases\Shared\" />
-	  <None Remove="Contexts\ConsolidationContext\Factories\Factory.json" />
-	</ItemGroup>
-	<ItemGroup>
-	  <Folder Include="Contexts\ConsolidationContext\" />
-	  <Folder Include="Contexts\ConsolidationContext\Entities\" />
-	  <Folder Include="Contexts\ConsolidationContext\Data\" />
-	  <Folder Include="Contexts\ConsolidationContext\Services\" />
-	  <Folder Include="Contexts\ConsolidationContext\UseCases\" />
-	  <Folder Include="Contexts\ConsolidationContext\UseCases\Get\" />
-	  <Folder Include="Contexts\UserContext\UseCases\Login\" />
-	  <Folder Include="Contexts\UserContext\UseCases\Shared\" />
-	</ItemGroup>
 </Project>

@@ -61,7 +61,7 @@ public class RequestHandler : IRequestHandler<CreateTransactionRequest, Response
 
             this._unitOfWork.Commit();
 
-            return CreateTransactionResponse.CreateSuccess(200, transaction);
+            return CreateTransactionResponse.CreateSuccess(200);
         }
         catch
         {
